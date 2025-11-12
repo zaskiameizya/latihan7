@@ -22,19 +22,26 @@
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
         }
+        .semua {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+        }
         
         .profil img {
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            margin-right: 10px;
-            margin-top: 5px;
-            padding: 10px;
+            object-fit: cover;
+            overflow: hidden;
         }
-        .profil  {
+         
+        .profil {
             display: flex;
             align-items: center;
-            margin-top: 8px;
+        }
+        .profil span {
+            padding: 15px;
         }
         h2 {
             padding: 15px;
@@ -42,10 +49,9 @@
         } 
         .icon {
             display: flex;
-            justify-content: flex-end;
-            margin-top: -38px;
-            gap: 5px;
-            margin-right: 15px;
+            justify-content: end;
+            align-items: center;
+            gap: 10px;
         }
     </style>
 </head>
@@ -55,6 +61,7 @@
             <img src="image.jpg">
         </div>
         <h2>Urban Dreams</h2>
+        <div class="semua">
     <div class="profil">
        <img src="profil.png">
        <span>Cody Fisher</span>
@@ -65,7 +72,9 @@
         <i class="hgi hgi-stroke hgi-comment-01"></i>
         <span>5</span>
     </div>
+        </div>
     </div>
+    
    
 </body>
 </html>
